@@ -13,7 +13,7 @@ function logSection(title) {
 }
 
 // 1
-logSection('ЧАСТИНА 1: Створення об\'єктів');
+logSection('1');
 
 const car1 = new Object();
 car1.model = "Mustang";
@@ -50,7 +50,7 @@ log('\ncar2 = ' + JSON.stringify(car2, null, 2));
 car2.drive();
 
 // 2
-logSection('ЧАСТИНА 2: Конструктор Truck та прототипи');
+logSection('2');
 
 function Truck(brand = "Volvo", model = "FH16", capacity = 25000) {
     this.brand = brand;
@@ -81,7 +81,7 @@ log('\ntruck2 = ' + JSON.stringify(truck2, null, 2));
 truck2.trip();
 
 // 3
-logSection('ЧАСТИНА 3: ES6 Класи та наслідування');
+logSection('3');
 
 class Square {
     constructor(side) {
@@ -214,7 +214,7 @@ para.info();
 
 // 4
 
-logSection('ЧАСТИНА 4: Функції, деструктуризація, замикання');
+logSection('4');
 
 function Triangular({ a, b, c }) {
     const perimeter = a + b + c;
@@ -259,4 +259,5 @@ const paintBlue = Painter("Blue");
 paintRed({ type: "SUV" });
 paintBlue({ type: "Sedan" });
 paintRed({ id: "123" });
+
 
